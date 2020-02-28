@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components"
+
 import {
   
  
@@ -44,16 +45,16 @@ margin:0 3%;
 
 
 
-const LocationCard = ({ characters }) => {
+const EpisodeCard = ({ characters }) => {
  
   return (
     <Col xs="6" md="4" xl="3">
       <CardStyle >
         <Div>
         <Name>Name: {characters.name}</Name>
-          <Info>Type: {characters.type}</Info>
+  <Info>Air-date: {characters.air_date}</Info>
           
-          <Info>Dimension: {characters.dimension} </Info>
+          <Info>Episode: {characters.episode} </Info>
           </Div>
 
           <Div>
@@ -65,4 +66,4 @@ const LocationCard = ({ characters }) => {
     </Col>
   );
 };
-export default LocationCard;
+export default EpisodeCard;
