@@ -44,21 +44,19 @@ margin:0 3%;
 
 
 
-const LocationCard = ({ characters }) => {
+const LocationCard = ({ location }) => {
  
   return (
     <Col xs="6" md="4" xl="3">
       <CardStyle >
         <Div>
-        <Name>Name: {characters.name}</Name>
-          <Info>Type: {characters.type}</Info>
+        <Name>Name: {location.name}</Name>
+          <Info>Type: {location.type}</Info>
           
-          <Info>Dimension: {characters.dimension} </Info>
+          <Info>Dimension: {location.dimension} </Info>
           </Div>
 
-          <Div>
-          <Info> <img src = {characters.image}/> </Info>
-          </Div>
+      
        
        
       </CardStyle>

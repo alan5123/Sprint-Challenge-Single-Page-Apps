@@ -45,21 +45,18 @@ margin:0 3%;
 
 
 
-const EpisodeCard = ({ characters }) => {
+const EpisodeCard = ({ episode }) => {
  
   return (
     <Col xs="6" md="4" xl="3">
       <CardStyle >
         <Div>
-        <Name>Name: {characters.name}</Name>
-  <Info>Air-date: {characters.air_date}</Info>
+        <Name>Name: {episode.name}</Name>
+  <Info>Air-date: {episode.air_date}</Info>
           
-          <Info>Episode: {characters.episode} </Info>
+          <Info>Episode: {episode.episode} </Info>
           </Div>
 
-          <Div>
-          <Info> <img src = {characters.image}/> </Info>
-          </Div>
        
        
       </CardStyle>

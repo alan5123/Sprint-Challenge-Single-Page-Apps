@@ -58,8 +58,8 @@ return (
 <div>
         <Container>
         <Row>
-            {data.map(characters => {
-        return <EpisodesCard characters={characters} key={characters.id} />;
+            {data.map(episode => {
+        return <EpisodesCard episode={episode} key={episode.id} />;
       })}  </Row>
     </Container>
   

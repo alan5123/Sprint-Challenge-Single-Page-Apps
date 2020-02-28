@@ -59,8 +59,8 @@ return (
 <div>
         <Container>
         <Row>
-            {data.map(characters => {
-        return <LocationCard characters={characters} key={characters.id} />;
+            {data.map(location=> {
+        return <LocationCard location={location} key={location.id} />;
       })}  </Row>
     </Container>
   
