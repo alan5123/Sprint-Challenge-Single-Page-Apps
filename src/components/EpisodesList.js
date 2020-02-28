@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components"
-
+import EpisodesCard from './EpisodesCard'
 import { Container, Row } from "reactstrap";
-import LocationCard from "./LocationCard";
 
 const Form = styled.form `
 display: flex;
@@ -21,14 +20,14 @@ border: 2px solid #263650;
 
 
 
-export default function LocationList () {
+export default function Characters () {
 
     const [data, setData] = useState ([]);
     const [query, setQuery] = useState("");
 
     useEffect (() => {
 
-axios.get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/location/")
+axios.get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/episode/")
 .then(response => {
     console.log(response);
     const characters = response.data.results.filter(character =>
@@ -59,8 +58,8 @@ return (
 <div>
         <Container>
         <Row>
-            {data.map(location=> {
-        return <LocationCard location={location} key={location.id} />;
+            {data.map(episode => {
+        return <EpisodesCard episode={episode} key={episode.id} />;
       })}  </Row>
     </Container>
   

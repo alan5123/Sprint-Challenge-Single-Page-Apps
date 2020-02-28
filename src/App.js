@@ -1,11 +1,14 @@
-import React from "react";
-import Header from "./components/Header.js";
+import React from 'react';
+import AppRouter from "./components/AppRouter"
 
 
-export default function App() {
+
+function App() {
   return (
-    <main>
-      <Header />
-    </main>
+    <div className="App">
+       <AppRouter />
+    </div>
   );
 }
+
+export default App;
